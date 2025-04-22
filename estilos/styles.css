@@ -1,0 +1,13 @@
+/* Comentario de CSS */
+header {
+    background-color: brown;
+}
+
+/* Selector por ID */
+#p2 {
+    color: chocolate;
+    /*  Tamaño de fuente */
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+}
