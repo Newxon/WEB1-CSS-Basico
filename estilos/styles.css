@@ -7,7 +7,8 @@ header {
 #p2 {
     color: chocolate;
     /*  Tamaño de fuente */
-    font-size: 1.5em;
+    font-size: "10";
     text-align: center;
     font-weight: 900;
 }
+

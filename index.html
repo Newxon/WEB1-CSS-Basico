@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica inicial de CSS</title>
+
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="encabezado">Práctica Inicial de CSS</h1>
+        <h2>Estructura básica de CSS</h2>
+    </header>
+
+    <main>
+        <p class="parrafo">1.1: CSS significa Cascading Style Sheets, lo que en español significaria hojas de estilo en
+            cascada.</p>
+
+        <p>1.2: El CSS sirve para darle estilo y posicionamiento a nuestro proyecto HTML, y para interpretarlo
+            utilizamos los navegadores.</p>
+
+        <p>1.3: Se le llama regla de CSS a la forma en la que este mismo le da estilo a alguna etiqueta, debiendo
+            contener un selector, llaves y propiedades. <br> <br> por ejemplo: <br> <br> h1 { <br> color: red;<br> }</p>
+
+        <p>1.4: La primera pregunta la respondí en la consigna anterior.</p>
+
+        <dl>
+            <dt>Selector</dt>
+            <dd>Selecciona el elemento HTML que vamos a diseñar.</dd>
+
+            <dt>Llaves</dt>
+            <dd>Dentro de estas llaves deben ser ingresadas las declaraciones que se desean agregar, es decir, las
+                propiedades y sus valores.</dd>
+
+            <dt>Propiedades</dt>
+            <dd>Se les es asignado un valor para cambiar el diseño de nuestro selector.</dd>
+        </dl>
+
+        <p>1.5: Un selector en CSS nos permite aplicar estilos a elementos especifícos a traves de distintos selectores.
+        </p>
+
+        <p>1.6:</p>
+
+        <table>
+            <tr>
+                <td>Selectores</td>
+                <td>Definición</td>
+            </tr>
+
+            <tr>
+                <td>Selector de ID</td>
+                <td>Este tipo de selector es utilizado para darle un diseño a un unico elemento a través de un
+                    identificador.</td>
+            </tr>
+
+            <tr>
+                <td>Selector de Clases</td>
+                <td>Este tipo de selector es utilizado para darle diseño a todos los elementos que posean una misma
+                    clase dada por un atributo class.</td>
+            </tr>
+
+            <tr>
+                <td>Selector Universal</td>
+                <td>Permite aplicar un diseño a absolutamente todos los elementos de un proyecto HTML.</td>
+            </tr>
+
+            <tr>
+                <td>Selector de etiquetas</td>
+                <td>Permite aplicar un diseño a una etiqueta en general.</td>
+            </tr>
+
+            <tr>
+                <td>Selector Descendente</td>
+                <td>Este selector permite cambiar el diseño de un elemento que esta dentro de otro elemento.</td>
+            </tr>
+        </table>
+
+        <p>1.7: El CSS funciona por etapas, teniendo el siguiente ordén</p>
+
+        <ol>
+            <li>El Navegador carga el HTML.</li>
+            <li>Se transforma el HTML en DOM, siendo la página representada en la memoria del ordenador.</li>
+            <li>El Navegador busca los archivos vinculados al documento, incluidos el CSS y Javascript.</li>
+            <li>El Navegador comienza a analizar el CSS para ordenarlo según sus reglas y selectores utilizados.</li>
+            <li>El arból de renderización da la estructura en la que debe aparecer la página luego de analizar sus
+                reglas.</li>
+            <li>Finalmente, la página se muestra en la pantalla.</li>
+        </ol>
+
+        <p>1.8: Las 3 formas para vincular el CSS con HTML son:</p>
+
+        <table>
+            <tr>
+                <td>Forma</td>
+                <td>Metodo</td>
+            </tr>
+
+            <tr>
+                <td>Atributo</td>
+                <td>Se le agrega el atributo "style" a una etiqueta para cambiar su diseño.</td>
+            </tr>
+
+            <tr>
+                <td>Etiqueta</td>
+                <td>Se abre una etiqueta "style" y se seleccionan los elementos que se quieren cambiar.</td>
+            </tr>
+
+            <tr>
+                <td>Archivo</td>
+                <td>Se crea un archivo con la extensión .css y se enlaza a nuestro proyecto HTML.</td>
+            </tr>
+        </table>
+
+        <p>1.9:</p>
+        <p>Diseños seleccionados: <a href="https://csszengarden.com/199/">Diseño 1</a> <a
+                href="https://csszengarden.com/202/">Diseño 2</a></p>
+        <p>1.9-1: Las etiquetas dentro de Body si son iguales teniendo la misma estructura, lo que contribuye al cambio
+            de diseño es el CSS.</p>
+        <p>1.9-2: No, los archivos no son los mismos ya que presentan distintos diseños.</p>
+        <p>1.9-3: Si, el mismo HTML puede tener diferentes diseños gracias a que CSS se puede utilizar de muchas formas
+            en un mismo proyecto.</p>
+
+        <p>2.0:</p>
+
+        <table>
+            <tr>
+                <th>Propiedad</th>
+                <th>Descripción</th>
+                <th>Valores posibles</th>
+            </tr>
+
+            <tr>
+                <td>color</td>
+                <td>Define el color del texto.</td>
+                <td>color: red; <br> color: #090a; <br> color: tan;</td>
+            </tr>
+
+            <tr>
+                <td>background-color</td>
+                <td>Define el color de fondo de un elemento.</td>
+                <td>background-color: black; <br> background-color: teal; <br> background-color: rgb(153, 102, 153);
+                </td>
+            </tr>
+
+            <tr>
+                <td>font-size</td>
+                <td>Define el tamaño de la fuente del texto.</td>
+                <td>font-size: "7"; <br> font-size: "1"; <br> font-size: 16px;</td>
+            </tr>
+
+            <tr>
+                <td>font-weight</td>
+                <td>Define el grosor de la fuente del texto (por ejemplo, si se trata de texto en negrita o normal).
+                </td>
+                <td>font-weight: 100; <br> font-weight: bold; <br> font-weight: lighter;</td>
+            </tr>
+
+            <tr>
+                <td>font-style</td>
+                <td>Define el estilo de la fuente de texto (por ejemplo, si es cursiva o normal).</td>
+                <td>font-style: normal; <br> font-style: italic; <br> font-style: oblique;</td>
+            </tr>
+
+            <tr>
+                <td>font-family</td>
+                <td>Define el tipo de letra a utilizar para el texto.</td>
+                <td>font-family: Times, "Times New Roman", Georgia, serif; <br> font-family: Verdana, Arial, Helvetica,
+                    sans-serif; <br> font-family: "Lucida Console", Courier, monospace;</td>
+            </tr>
+
+            <tr>
+                <td>text-align</td>
+                <td>Define la alineación horizontal del texto (izquierda, centro o derecha).</td>
+                <td>text-align: justify; <br> text-align: center; <br> text-align: start;</td>
+            </tr>
+
+            <tr>
+                <td>text-decoration</td>
+                <td>Define la decoración del texto (por ejemplo, si está subrayado o tachado).</td>
+                <td>text-decoration: none; <br> text-decoration: underline red; <br> text-decoration: underline wavy
+                    red;</td>
+            </tr>
+
+            <tr>
+                <td>text-transform</td>
+                <td>Define la transformación del texto (por ejemplo, en mayúsculas o minúsculas).</td>
+                <td>text-transform: capitalize; <br> text-transform: uppercase; <br> text-transform: lowercase;</td>
+            </tr>
+
+            <tr>
+                <td>letter-spacing</td>
+                <td>Define el espacio entre letras.</td>
+                <td>letter-spacing: normal; <br> letter-spacing: 3px; <br> letter-spacing: 0.3em;</td>
+            </tr>
+
+            <tr>
+                <td>line-height</td>
+                <td>Define la altura de línea del texto.</td>
+                <td>line-height: normal; <br> line-height: 3.5; <br> line-height: 34%;</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>Alumno: Néstor Martinez</p>
+        <p>Curso: 4to 1ra</p>
+    </footer>
+</body>
+
+</html>

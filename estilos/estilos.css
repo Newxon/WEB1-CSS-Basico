@@ -1,0 +1,82 @@
+/* Estilos para la página web */
+
+body {
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+}
+
+.encabezado {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.parrafo {
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+#fondo {
+    background-color: #aa3b3b;
+}
+
+p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.pcolor {
+    color: #f2f2f2;
+}
+
+.pbackc {
+    background-color: #f2f2f2;
+}
+
+.pfsize {
+    font-size: 32px;
+}
+
+.pfweight {
+    font-weight: bold;
+}
+
+.pfstyle {
+    font-style: italic;
+}
+
+.pffamily {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ptalign {
+    text-align: center;
+}
+
+.ptdecoration {
+    text-decoration: underline;
+}
+
+.pttransform {
+    text-transform: lowercase
+}
+
+.plspacing {
+    letter-spacing: 3px;
+}
+
+.plheight {
+    line-height: 10;
+}
