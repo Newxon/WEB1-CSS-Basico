@@ -1,0 +1,42 @@
+ /* Header */
+ header {
+    background: #ab0000;
+    background: radial-gradient(circle, rgba(171, 0, 0, 1) 90%, rgba(97, 47, 47, 1) 100%);
+    /*background-color: rgb(139, 36, 39); /* Fondo completo del header */
+    color: white;
+    text-align: center; /* alinear todos los textos del header */
+    height: 120px; /* Altura por ahora en px = pixeles */ 
+}
+
+nav ul li {
+    display: inline-block; /* A los elementos de la lista los coloca horizontal */
+}
+
+nav ul li a { /* Selecciono los A (anchor - amcla - enlace - link - url - hipervínculo) */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #FFFFFF; /* Color blanco a la letra de A */
+    text-transform: uppercase; /* Colocamos el texto de A en mayúscula */
+    padding: 15px; /* margén interno del elemento A */
+    background-color: gray;
+    border-radius: 10px;
+}
+/* Fin del Header */
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: rgb(72, 72, 72);
+}
+
+footer h2 {
+    color: rgb(185, 184, 184);;
+}
+/* Fin del Footer */ 
