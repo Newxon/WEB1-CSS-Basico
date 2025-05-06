@@ -1,42 +1,101 @@
+ body {
+    margin: 0px;
+ }
+ body h1 {
+    margin: 0px;
+ }
  /* Header */
  header {
-    background: #ab0000;
-    background: radial-gradient(circle, rgba(171, 0, 0, 1) 90%, rgba(97, 47, 47, 1) 100%);
-    /*background-color: rgb(139, 36, 39); /* Fondo completo del header */
-    color: white;
-    text-align: center; /* alinear todos los textos del header */
-    height: 120px; /* Altura por ahora en px = pixeles */ 
+     background: #ab0000;
+     /*background-color: rgb(139, 36, 39); /* Fondo completo del header */
+     color: white;
+     text-align: center;
+     /* alinear todos los textos del header */
+     height: 100px;
+     /* Altura por ahora en px = pixeles */
+ }
+
+ nav ul {
+     padding: 0px;
+ }
+
+ nav ul li {
+     display: inline-block;
+     /* A los elementos de la lista los coloca horizontal */
+     margin: 6.5px;
+ }
+
+ nav ul li a {
+     /* Selecciono los A (anchor - amcla - enlace - link - url - hipervínculo) */
+     text-decoration: none;
+     /* Elimina el subrayado */
+     color: #FFFFFF;
+     /* Color blanco a la letra de A */
+     text-transform: uppercase;
+     /* Colocamos el texto de A en mayúscula */
+     padding: 15px;
+     /* margén interno del elemento A */
+     background-color: rgb(97, 47, 47, 1);
+     border-radius: 10px;
+ }
+
+ /*  Pseudo clases - es un estado especial que se le asigna a un elemento seleccionado.
+Objetivo: aplicar estilos a elementos en ciertas condiciones, sin necesidad de usar otra clase adicional.*/
+ /* :hover - el puntero está encima del elemento a.*/
+ nav ul li a:hover {
+     color: rgb(97, 47, 47, 1);
+     background-color: #FFFFFF;
+ }
+
+ /* Fin del Header */
+
+ /* Main */
+ main {
+     background-color: #FFFFFF;
+     text-align: center;
+ }
+
+ main section div a {
+     text-decoration: none;
+     color: white;
+     padding: 3px;
+     background-color: rgb(97, 47, 47, 1);
+     border-radius: 5px;
+ }
+ main section div a:hover {
+     background-color: black;
+ }
+main section h2 {
+    background-color: rgb(212, 106, 106);
+    color: #FFFFFF;
 }
-
-nav ul li {
-    display: inline-block; /* A los elementos de la lista los coloca horizontal */
+main #kick h2 {
+    margin: 0px;
 }
+ /* Fin del main */
 
-nav ul li a { /* Selecciono los A (anchor - amcla - enlace - link - url - hipervínculo) */
-    text-decoration: none; /* Elimina el subrayado */
-    color: #FFFFFF; /* Color blanco a la letra de A */
-    text-transform: uppercase; /* Colocamos el texto de A en mayúscula */
-    padding: 15px; /* margén interno del elemento A */
-    background-color: gray;
-    border-radius: 10px;
-}
-/* Fin del Header */
+ /* Footer */
+ footer {
+     background-color: rgb(72, 72, 72);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
+ footer h2 {
+     color: rgb(185, 184, 184);
+     text-align: center;
+     margin-bottom: 0px;
+ }
 
+ footer div ul {
+     display: flex;
+     padding: 0px;
+ }
 
+ footer div ul li {
+     list-style-type: none;
+     margin: 20px;
+ }
 
-
-
-
-
-
-
-/* Footer */
-footer {
-    background-color: rgb(72, 72, 72);
-}
-
-footer h2 {
-    color: rgb(185, 184, 184);;
-}
-/* Fin del Footer */ 
+ /* Fin del Footer */
