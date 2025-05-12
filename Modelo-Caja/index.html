@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de cajas</title>
+    <style>
+        header {
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            border-top: 5px solid yellow;
+            /* border arriba */
+            border-bottom: 5px solid yellow;
+            /* borde abajo */
+            /*margin: 55px 125px; /55px top y bottom / 125px right y left */
+            /*margin: 20px 35px 45px; / top / right-left / bottom */
+            margin: 10px 20px 30px 40px;
+            padding: 0px;
+            font-size: 2.5em;
+        }
+
+        main table tr th {
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            background-color: #deb887;
+        }
+
+        main table tr td {
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            background-color: rgb(142, 175, 84);
+        }
+
+        main table {
+            /* Eliminar el espacio entre bordes */
+            border-spacing: 0px;
+        }
+
+        .dia {
+            background-color: burlywood;
+        }
+
+        .noche {
+            background-color: rgb(150, 105, 47)
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cajas -->
+    <header>
+        <!-- Una caja div con la letra R con un font-size de 2.5em -->
+         <div>R</div>
+    </header>
+
+    <main>
+        <h2>Horarios de ingles</h2>
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Tarde</th>
+                <th>Noche</th>
+            </tr>
+
+            <tr>
+                <td class="dia"><strong>Miercoles</strong></td>
+                <td>18:00-19:30</td>
+                <td class="noche">19:30-21:00</td>
+            </tr>
+
+            <tr>
+                <td class="dia"><strong>Viernes</strong></td>
+                <td>18:00-19:30</td>
+                <td class="noche">19:30-21:00</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>
