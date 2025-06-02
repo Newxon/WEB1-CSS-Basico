@@ -1,0 +1,62 @@
+/* Footer */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+
+p {
+    color: #707070;
+}
+
+.wandb {
+    color: white;
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+}
+
+.white {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.subfooter-container {
+    display: flex;
+}
+
+.subfooter-section {
+    display: flex;
+}
+
+.rs {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.sw {
+    width: 30px;
+    height: 30px;
+}
+
+.ubi {
+    width: 15px;
+    height: 15px;
+}
