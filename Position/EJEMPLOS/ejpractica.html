@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de ejemplo: position</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 400px;
+            width: 400px;
+            background-color: #e0e0e0;
+            position: relative;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+        }
+
+        .box-1 {
+            top: 0px;
+            left: 0px;
+            background-color: #ff8080;
+        }
+
+        .box-2 {
+            top: 0px;
+            right: 0px;
+            background-color: #80ff80;
+        }
+
+        .box-3 {
+            bottom: 0px;
+            left: 0px;
+            background-color: #8080ff;
+        }
+
+        .box-4 {
+            bottom: 0px;
+            right: 0px;
+            background-color: #ffff80;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+    </div>
+</body>
+
+</html>

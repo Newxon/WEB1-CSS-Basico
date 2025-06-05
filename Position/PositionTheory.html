@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría de Position</title>
+
+    <style>
+        /* ej 9*/
+        .elemento1 {
+            position: absolute;
+            z-index: 1;
+            color: red;
+        }
+
+        .elemento2 {
+            position: absolute;
+            z-index: 1;
+            color: black;
+        }
+
+        /*fin ej 9*/
+
+        /* ej 11*/
+        .container {
+            width: 400px;
+            height: 300px;
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+
+        /*fin ej 11*/
+    </style>
+</head>
+
+<body>
+    <!--
+1) ¿Cuál es la diferencia principal entre position relative y position absolute?
+
+1-La diferencia principal entre position relative y position absolute es: el valor relative mueve el elemento en 
+relación con el documento HTML y el valor absolute mueve el elemento en relación con su contenedor.
+
+
+2)¿Qué valor de position se utiliza por defecto para los elementos HTML?
+
+2-Se utiliza el valor static.
+
+
+3)¿Qué propiedad se utiliza para establecer la capa de apilamiento de elementos superpuestos?
+
+3-Se utiliza la propiedad Z-index.
+
+
+4)¿Cuándo se utiliza position fixed en CSS?
+
+4-Se utiliza position fixed cuando deseamos que nuestro elemento se mantenga en la misma posición aunque el usuario desplaze la página.
+
+
+5)¿Cómo se comporta un elemento con position sticky al desplazarse?
+
+5-Al desplazarse, un elemento con position sticky se pega a la parte superior de nuestra pantalla a menos que volvamos a su lugar en la página.
+
+
+6)¿Cuál es el valor de position adecuado para un elemento que se desea que siga el flujo normal del documento?
+
+6-El valor adecuado es: position relative.
+
+
+7)¿Cuál es la forma más común de mover un elemento con position relative?
+
+7-La forma más común es utilizando los valores left, right, top y bottom.
+
+
+8)¿En qué casos se puede utilizar z-index para controlar el orden de apilamiento de elementos?
+
+8-Se puede utilizar cuando tenemos un elemento con la propiedad position: fixed o sticky, este mismo va a 
+pasar por encima de otros elementos y necesitamos que esos elementos aún sean visibles.
+
+
+9)¿Qué sucede cuando dos elementos tienen el mismo valor de z-index? Prueba su resultado y responde.
+ -->
+
+    <!-- Ejercicio 9 rta: Cuando dos elementos tienen el mismo valor de z-index el elemento que queda sobre la
+capa superior es el ultimo que fue escrito o llamado. -->
+    <div style="position: relative;">
+        <div class="elemento1">Elemento 1</div>
+        <div class="elemento2">Elemento 2</div>
+    </div>
+
+    <!-- 
+    10)¿Cuál es la principal diferencia entre position sticky y position fixed?
+
+    10-La principal diferencia entre position:sticky y fixed es: El valor fixed
+    deja un elemento fijo en la pantalla sin importar el desplazamiento, y el valor sticky 
+    "pega" nuestro elemento a la parte superior de la página mientras nos desplazamos.
+
+
+    11)En el siguiente ejemplo, ¿el valor top y right es en relación a qué elemento?
+    -->
+
+    <!-- Ejercicio 11 rta: El valor top y right está en relación al body. -->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <!-- 12)En el ejemplo anterior ¿qué agregarías para que la caja hija esté dentro de la caja padre?
+
+    12-Para que la caja hija se encuentre dentro de la caja padre le agregaría la propiedad
+    position:relative a el contenedor.
+ -->
+
+</body>
+
+</html>
