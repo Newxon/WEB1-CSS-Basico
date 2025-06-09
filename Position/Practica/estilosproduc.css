@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.The-most-sold {
+    background-color: #e6f1fc;
+    color: #0053e2;
+    font-weight: 700;
+    width: 110px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.position-img {
+    position: relative;
+}
+
+.container {
+    width: 540;
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.img-producto {
+    width: 250px;
+    height: 300px;
+}
+
+.heart-icon {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    border-radius: 1000px;
+}
+
+.Blue-button {
+    display: flex;
+    align-items: center;
+    background-color: #0053e2;
+    border: none;
+    padding: 1px .5rem;
+    border-radius: 1000px;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    position: absolute;
+    bottom: 0px;
+}
+
+.Plus-symbol {
+    display: flex;
+    font-weight: 100;
+    font-size: 1.9em;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
