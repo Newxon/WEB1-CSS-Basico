@@ -69,3 +69,27 @@ h2 {
     margin-bottom: 10px;
     font-size: larger;
 }
+
+.price {
+    color: #2a8703;
+    display: flex;
+    gap: 5px;
+}
+
+.old-price {
+    display: flex;
+    color: black;
+    font-weight: 100;
+    font-size: small;
+    align-items: center;
+    text-decoration: line-through;
+}
+
+.product-description {
+    margin-bottom: 10px;
+}
+
+.reviews-amount {
+    font-weight: 300;
+    font-size: small;
+}
