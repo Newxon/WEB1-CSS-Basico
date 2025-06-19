@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .contenedor {
+      display: flex;
+      width: 600px;
+      height: 100px;
+      background-color: #f0f0f0;
+      border: 2px solid black;
+    }
+    .elemento {
+      height: 100%;
+      text-align: center;
+      line-height: 100px;
+      color: white;
+      font-size: 18px;
+    }
+    .elemento1 {
+      background-color: #ff6b6b;
+      flex-grow: 1;
+    }
+    .elemento2 {
+      background-color: #4ecdc4;
+      flex-grow: 2;
+    }
+    .elemento3 {
+      background-color: #45b7d1;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="elemento elemento1">Elemento 1</div>
+    <div class="elemento elemento2">Elemento 2</div>
+    <div class="elemento elemento3">Elemento 3</div>
+  </div>
+
+  <p>¿cómo es la distribución de los elementos flex (flex items) según los valores de flex-grow?</p>
+  <p>según flex-grow, los elementos tienen los siguientes valores: <br> elemento1 : flex-grow: 1; <br> elemento2 : flex-grow: 2; <br> elemento3 :  flex-grow: 1;</p>
+
+  <br>
+
+  <p>¿qué sucede si el primer elemento tiene un valor de flex-grow en 0?</p>
+  <p>Si el primer elemento tiene un valor de flex-grow 0, la caja se ajusta a el tamaño de su contenido.</p>
+</html>

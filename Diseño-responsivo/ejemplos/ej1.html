@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ejemplo flex-basis</title>
+   <style>
+       .contenedor {
+           display: flex;
+           gap: 10px;
+           background: #f0f0f0;
+           padding: 10px;
+       }
+       .item {
+           background: #6ab6d8;
+           color: white;
+           padding: 20px;
+           text-align: center;
+           border: 2px solid #2e86bb;
+       }
+       .item1 { flex-basis: 100px; }  /* Tamaño inicial de 100px */
+       .item2 { flex-basis: 200px; }  /* Tamaño inicial de 200px */
+       .item3 { flex-basis: auto; }   /* Tamaño según su contenido */
+       .item4 { flex-basis: 100%;}     /* Tamaño al 100% de lo que resta dentro del contenedor */
+   </style>
+</head>
+<body>
+   <div class="contenedor">
+       <div class="item item1">100px</div>
+       <div class="item item2">200px</div>
+       <div class="item item3">Auto (ajusta al contenido)</div>
+       <div class="item item4">Ocupa el resto (100%)</div>
+   </div>
+
+   <br>
+
+   <p> ¿cuáles son los anchos de cada elemento flex (flex item)? </p>
+   <p>Los anchos de cada elemento son: <br> item1: 100px <br> item2: 200px <br> item3: auto (el tamaño cambia según su contenido) <br> item4: 100% (el espacio que queda sin utilizar del contenedor)
+   </p>
+
+   <br>
+
+   <p>¿qué valor de flex-wrap tiene el contenedor?</p> 
+   <p>El contenedor tiene el valor flex-wrap: no-wrap; por defecto.</p>
+
+   <br>
+
+   <p>¿qué sucede si el valor de flex-wrap es wrap?</p>
+   <p>Si el valor de flex-wrap es wrap, los items se adaptan y se van una fila más abajo dependiendo de nuestra pantalla.</p>
+</body>
+</html>

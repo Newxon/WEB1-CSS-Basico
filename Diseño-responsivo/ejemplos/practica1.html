@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de box-sizing y @media</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header */
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 100%;
+            border: 2px solid black;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            width: 100%;
+            padding: 20px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+        }
+
+        .box1 {
+            background-color: gray;
+        }
+
+        .box2 {
+            background-color: black;
+        }
+
+        .box3 {
+            background-color: gray;
+        }
+
+        .box4 {
+            background-color: black;
+        }
+
+
+        /* Header end */
+
+        /* Main */
+
+        .main-container-section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+            gap: 20px;
+        }
+
+        .box-section1 {
+            width: 400px;
+            height: 620px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .box-section1 img {
+            width: 100%;
+            height: 340px;
+            margin-bottom: 20px;
+        }
+
+        .product-name {
+            font-weight: 800;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            height: 105px;
+            font-size: large;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-weight: 600;
+            font-size: large;
+            color: green;
+        }
+
+
+        /* Section separator */
+
+        .main-container-section2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .subcontainer-section2 {
+            width: 490px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-size: x-large;
+            font-weight: 600;
+        }
+
+        .subcontainer-section2 img {
+            width: 490px;
+            height: 100%;
+        }
+
+        /* Main end */
+
+        @media screen and (width >=768px) {
+
+            /* Main */
+            .container {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .main-container-section1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .subcontainer-section2 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .box-section1 {
+                width: 200px;
+                height: 320px;
+                border: 2px solid black;
+                border-radius: 10px;
+                ;
+                padding: 10px;
+            }
+
+            .box-section1 img {
+                width: 100%;
+                height: 170px;
+                margin-bottom: 5px;
+            }
+
+            .product-name {
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .product-description {
+                height: 70px;
+                font-size: x-small;
+                margin-bottom: 5px;
+            }
+
+            .product-price {
+                font-weight: 600;
+                color: green;
+            }
+
+            /*Section separator*/
+
+            .main-container-section2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .subcontainer-section2 {
+                width: 700px;
+                height: 200px;
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                gap: 20px;
+            }
+
+            .subcontainer-section2 img {
+                width: 100%;
+                height: 100%;
+            }
+
+            /*Main end*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="box box1"><a href="#">Inicio</a></li>
+                <li class="box box2"><a href="#">Productos</a></li>
+                <li class="box box3"><a href="#">Servicios</a></li>
+                <li class="box box4"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-container-section1">
+            <div class="box-section1">
+                <div><img src="../assets/img/Logitech-G502-HERO-03.png" alt="Mouse marca logitech"></div>
+                <div>
+                    <p class="product-name"> Mouse Logitech G502 Hero Black</p>
+                </div>
+                <div>
+                    <p class="product-description">El Logitech G502 HERO es un excelente ratón para juegos FPS. Se
+                        siente muy bien construido y
+                        cómodo de usar gracias a su cuerpo con buen agarre y diseño para diestros.</p>
+                </div>
+                <div>
+                    <p class="product-price">$65.000</p>
+                </div>
+            </div>
+
+            <div class="box-section1">
+                <div><img src="../assets/img/teclado-yama.jpg" alt="Teclado Redragon"></div>
+                <div>
+                    <p class="product-name">Teclado mecánico Redragon Yama K550</p>
+                </div>
+                <div>
+                    <p class="product-description">El Yama lo tiene todo: marco sólido de aluminio para proveer
+                        durabilidad y estabilidad; rueda de
+                        aluminio para controlar el volumen...</p>
+                </div>
+                <div>
+                    <p class="product-price">$105.000</p>
+                </div>
+            </div>
+
+            <div class="box-section1">
+                <div><img src="../assets/img/monitorAsus.png" alt="Monitor gamer Asus"></div>
+                <div>
+                    <p class="product-name">ASUS VG248QG Monitor Gamer 24″ 165Hz</p>
+                </div>
+                <div>
+                    <p class="product-description">Pantalla Full HD de 24 pulgadas (1920 x 1080) con una frecuencia de
+                        actualización rápida de 165
+                        Hz overclockable (soporta 144 Hz) y tiempo de respuesta de 0,5 ms (GTG).</p>
+                </div>
+                <div>
+                    <p class="product-price">$633.458</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container-section2">
+            <div class="subcontainer-section2">
+                <div><img src="../assets/img/perifericos.jpg" alt="Conjunto de perifericos"></div>
+                <div>
+                    <p>¡Los mejores perifericos en nuestra tienda!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
