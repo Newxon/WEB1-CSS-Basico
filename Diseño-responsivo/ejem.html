@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media</title>
+
+    <style>
+        .container div:first-child {
+            width: 60px;
+            height: 60px;
+            background-color: brown;
+        }
+
+        .container div:last-child {
+            width: 60px;
+            height: 60px;
+            background-color: chartreuse;
+        }
+
+        @media screen and (width >= 1200px) {
+            .container {
+                display: flex;
+            }
+        }
+
+        @media screen and (width > 768px) {
+            .container div:first-child {
+                background-color: chartreuse;
+            }
+
+            .container div:last-child {
+                background-color: brown;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
